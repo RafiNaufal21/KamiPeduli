@@ -29,7 +29,7 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
-    
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     
 </head>
 
@@ -76,7 +76,7 @@
                     
                 </div>
                 <div class="d-none d-lg-flex ms-2">
-                    <a class="btn btn-outline-primary py-2 px-3" href="">
+                    <a class="btn btn-outline-primary py-2 px-3" href="info_donasi.html">
                         Donasi Yuk
                         <div class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2">
                             <i class="fa fa-arrow-right"></i>
@@ -159,11 +159,12 @@
                                     <label for="message">Message</label>
                                 </div>
                             </div>
-                            <div class="col-12">
-                                <button class="btn btn-primary w-100 py-3" type="submit">Kirim Pesan</button>
-                            </div>
+                           
                         </div>
                     </form>
+                    <div class="col-12">
+                        <button class="btn btn-primary w-100 py-3" type="submit" onclick="pesan()">Kirim Pesan</button>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-6 pe-lg-0" style="min-height: 400px;">
@@ -179,7 +180,16 @@
     </div>
 </div>
 <!-- Contact End -->
-
+<script>
+    function pesan() {
+     swal({
+           title: 'Terima Kasih!',
+           text: 'Sudah Mengirim Keluhan ataupun Masukan Anda',
+           icon: 'success',
+           confirmButtonText: 'OK'
+         });
+}
+   </script>
 
     <!-- Team Start -->
     <div class="container-xxl py-5">
@@ -306,56 +316,57 @@
     </div>
     <!-- Team End -->
 
-        <div class="container-fluid bg-dark text-white-50 footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
-            <div class="container py-5">
-                <div class="row g-5">
-                    <div class="col-lg-3 col-md-6">
-                        <h1 class="text-white">Kami<span class="fw-bold text-primary mb-4">Peduli</span></h1>
-                        <p>Kami Peduli siap membantu, Saling Menolong Siapa Saja dan Kapan Saja</p>
-                        <div class="d-flex pt-2">
-                            <a class="btn btn-square me-1" href=""><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-square me-1" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-square me-1" href=""><i class="fab fa-youtube"></i></a>
-                            <a class="btn btn-square me-0" href=""><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <h5 class="text-light mb-4">Alamat</h5>
-                        <p><i class="fa fa-map-marker-alt me-3"></i>Kota Palu, Sulawesi Tengah, Indonesia</p>
-                        <p><i class="fa fa-phone-alt me-3"></i>+62 822-7337-0260</p>
-                        <p><i class="fa fa-envelope me-3"></i>kamipeduli@gmail.com</p>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <h5 class="text-light mb-4">Halaman</h5>
-                        <a class="btn btn-link" href="">Beranda</a>
-                        <a class="btn btn-link" href="">Kategori</a>
-                        <a class="btn btn-link" href="">Komunitas</a>
-                        <a class="btn btn-link" href="">Tentang</a>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <h5 class="text-light m-4">Daftar</h5>
-                        <p>Ayo kita saling membantu sesama</p>
-                        <div class="position-relative mx-auto" style="max-width: 400px;">
-                            <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Email">
-                            <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Daftar</button>
-                        </div>
+    <div class="container-fluid bg-dark text-white-50 footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h1 class="text-white">Kami<span class="fw-bold text-primary mb-4">Peduli</span></h1>
+                    <p>Kami Peduli siap membantu, Saling Menolong Siapa Saja dan Kapan Saja</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-square me-1" href=""><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-square me-1" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square me-1" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square me-0" href=""><i class="fab fa-github"></i></a>
                     </div>
                 </div>
-            </div>
-            <div class="container-fluid copyright">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                           
-                        </div>
-                        <center>
-                        <div class=" text-center ">
-                            Designed By <a>Ekosaviors</a>
-                        </div></center>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Alamat</h5>
+                    <p><i class="fa fa-map-marker-alt me-3"></i>Kota Palu, Sulawesi Tengah, Indonesia</p>
+                    <p><i class="fa fa-phone-alt me-3"></i>+62 822-7337-0260</p>
+                    <p><i class="fa fa-envelope me-3"></i>kamipeduli@gmail.com</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Halaman</h5>
+                    <a class="btn btn-link" href="index.html">Beranda</a>
+                    <a class="btn btn-link" href="relawan.html">Relawan</a>
+                    <a class="btn btn-link" href="info_donasi.html">Donasi</a>
+                    <a class="btn btn-link" href="tentang.html">Tentang</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light m-4">Daftar</h5>
+                    <p>Ayo kita saling membantu sesama</p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Email">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Daftar</button>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="container-fluid copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                       
+                    </div>
+                    <center>
+                    <div class=" text-center ">
+                        Designed By <a>Ekosaviors</a>
+                    </div></center>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
