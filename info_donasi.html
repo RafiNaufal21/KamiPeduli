@@ -116,79 +116,243 @@
             </div>
         </div>
     </div>
-
-    <!-- Causes Start -->
-    <div class="container-fluid my-5 py-5 causes">
-        <div class="container-xxl py-5">
-            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <div class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-" style="font-size: larger;">Lembaga Yang Bertanggung Jawab</div>
-                <h3 class="display-6 mb-5">Donasi Yang Kami Terima
-                    Akan Kami Salurkan Ke Lembaga Terkait</h3>
+ <!-- Causes Start -->
+ <div class="container-fluid my-5 py-5 causes">
+    <div class="container-xxl py-5">
+        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+            <div class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3" style="font-size: larger;">Lembaga Yang Bertanggung Jawab</div>
+            <h3 class="display-6 mb-5" style="margin-top: 2rem;">Donasi Yang Kami Terima
+                Akan Kami Salurkan Ke Lembaga Terkait</h3>
+        </div>
+        <div class="row g-1 justify-content-center">
+            <div class="col-lg-4 col-md-6 wow fadeInUp px-2" data-wow-delay="0.1s">
+                <div class="causes-item d-flex flex-column bg-white border-5 rounded-top overflow-hidden h-100" style="box-shadow: 0px 3px 5px rgba(110, 110, 110, 0.8);">
+                    <div class="position-relative">
+                        <img class="img-fluid" src="img/infodonasi1.png" alt="">
+                    </div>
+                    <div class="iconlike">
+                        <i class="bi bi-heart" id="likeBtn" onclick="toggleLike()"></i>
+                        <span class="like" id="likeCount">101</span>
+                    </div>
+                    <div class="p-4 pt-3" style="text-align: justify;">
+                        <h5 class="mb-3">Donasi Kepada Masyarakat NTB</h5>
+                        <p> masyarakat di wilayah NTB, bantuan sembako yang telah diberikan berupa beras, minyak goreng,
+                            sarden sebanyak 200 pack dan makanan instan sebanyak 1000 pcs kepada masyarakat di Bima, NTB.
+                            Dompet Amal TRANSMEDIA mengajak kita semua untuk peduli dan membantu saudara-saudara di NTT,
+                            NTB dan Malang. Donasi dapat disalurkan ke rekening di bawah ini, donasi yang masuk akan disalurkan
+                            bekerjasama dengan CT ARSA Foundation.
+                        </p>
+                        <a class="btn btn-primary py-2 px-3 me-3" data-bs-toggle="modal" data-bs-target="#modal1">
+                            Selengkapnya
+                            <div class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2">
+                                <i class="fa fa-arrow-right"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="row g-1 justify-content-center">
-                <div class="col-lg-4 col-md-6 wow fadeInUp px-2" data-wow-delay="0.1s">
-                    <div class="causes-item d-flex flex-column bg-white border-5 rounded-top overflow-hidden h-100" style="box-shadow: 0px 3px 5px rgba(110, 110, 110, 0.8);">
-                        <div class="position-relative">
-                            <img class="img-fluid" src="img/infodonasi1.png" alt="">
-                        </div>
-                        <div class="iconlike">
-                            <i class="bi bi-heart" id="likeBtn" onclick="toggleLike()"></i>
-                            <span class="like" id="likeCount">101</span>
-                        </div>
-                        <div class="p-4 pt-3" style="text-align: justify;">
-                            <h5 class="mb-3">Donasi Kepada Masyarakat NTB</h5>
-                            <p> masyarakat di wilayah NTB, bantuan sembako yang telah diberikan berupa beras, minyak goreng,
-                                sarden sebanyak 200 pack dan makanan instan sebanyak 1000 pcs kepada masyarakat di Bima, NTB.
-                                Dompet Amal TRANSMEDIA mengajak kita semua untuk peduli dan membantu saudara-saudara di NTT,
-                                NTB dan Malang. Donasi dapat disalurkan ke rekening di bawah ini, donasi yang masuk akan disalurkan
-                                bekerjasama dengan CT ARSA Foundation.
-                            </p>
-                        </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp px-2" data-wow-delay="0.1s">
+                <div class="causes-item d-flex flex-column bg-white border-5 rounded-top overflow-hidden h-100" style="box-shadow: 0px 3px 5px rgba(110, 110, 110, 0.8);">
+                    <div class="position-relative">
+                        <img class="img-fluid" src="img/infodonasi2.png" alt="">
+                    </div>
+                    <div class="iconlike">
+                        <i class="bi bi-heart" id="likeBtn1" onclick="toggleLike1()"></i>
+                        <span class="like" id="likeCount1">111</span>
+                    </div>
+                    <div class="p-4 pt-3" style="text-align: justify;">
+                        <h5 class="mb-3">Pembuatan Posko Kami Peduli di 
+                            Kota Palu</h5>
+                        <p> posko untuk korban gempa dan tsunami di Balai Transmigrasi Kota Palu, Sulawesi Tengah.
+                            Menteri Desa, Pembangunan Daerah Tertinggal dan Transmigrasi (Mendes PDTT) Eko Putro Sandjojo meyakini,
+                            posko yang didirikan itu dapat menampung hingga 2.000 pengungsi.Artikel ini telah tayang di Kompas.com
+                            dengan judul "Posko Bencana Kemendes PDTT di Palu Mampu Tampung 2.000 Pengungsi"
+                        </p>
+                        <a class="btn btn-primary py-2 px-3 me-3" data-bs-toggle="modal" data-bs-target="#modal2">
+                            Selengkapnya
+                            <div class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2">
+                                <i class="fa fa-arrow-right"></i>
+                            </div>
+                        </a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp px-2" data-wow-delay="0.1s">
-                    <div class="causes-item d-flex flex-column bg-white border-5 rounded-top overflow-hidden h-100" style="box-shadow: 0px 3px 5px rgba(110, 110, 110, 0.8);">
-                        <div class="position-relative">
-                            <img class="img-fluid" src="img/infodonasi2.png" alt="">
-                        </div>
-                        <div class="iconlike">
-                            <i class="bi bi-heart" id="likeBtn1" onclick="toggleLike1()"></i>
-                            <span class="like" id="likeCount1">111</span>
-                        </div>
-                        <div class="p-4 pt-3" style="text-align: justify;">
-                            <h5 class="mb-3">Pembuatan Posko Kami Peduli di 
-                                Kota Palu</h5>
-                            <p> posko untuk korban gempa dan tsunami di Balai Transmigrasi Kota Palu, Sulawesi Tengah.
-                                Menteri Desa, Pembangunan Daerah Tertinggal dan Transmigrasi (Mendes PDTT) Eko Putro Sandjojo meyakini,
-                                posko yang didirikan itu dapat menampung hingga 2.000 pengungsi.Artikel ini telah tayang di Kompas.com
-                                dengan judul "Posko Bencana Kemendes PDTT di Palu Mampu Tampung 2.000 Pengungsi"
-                            </p>
-                        </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp px-2" data-wow-delay="0.1s">
+                <div class="causes-item d-flex flex-column bg-white border-5 rounded-top overflow-hidden h-100" style="box-shadow: 0px 3px 5px rgba(110, 110, 110, 0.8);">
+                    <div class="position-relative">
+                        <img class="img-fluid" src="img/infodonasi3.png" alt="">
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp px-2" data-wow-delay="0.1s">
-                    <div class="causes-item d-flex flex-column bg-white border-5 rounded-top overflow-hidden h-100" style="box-shadow: 0px 3px 5px rgba(110, 110, 110, 0.8);">
-                        <div class="position-relative">
-                            <img class="img-fluid" src="img/infodonasi3.png" alt="">
-                        </div>
-                        <div class="iconlike">
-                            <i class="bi bi-heart" id="likeBtn2" onclick="toggleLike2()"></i>
-                            <span class="like" id="likeCount2">121</span>
-                        </div>
-                        <div class="p-4 pt-3" style="text-align: justify;">
-                            <h5 class="mb-3">Donasi bencana di aceh</h5>
-                            <p> Kabar duka tersiar dari Aceh Timur yang diterjang banjir akibatnya 6.003 rumah warga yang berada
-                                di tujuh kecematan di Kabupaten Aceh Timur, Aceh harus terendam air. Sebanyak 2.751 warga juga
-                                harus tinggal sementara di pengungsian.
-                            </p>
-                        </div>
+                    <div class="iconlike">
+                        <i class="bi bi-heart" id="likeBtn2" onclick="toggleLike2()"></i>
+                        <span class="like" id="likeCount2">121</span>
+                    </div>
+                    <div class="p-4 pt-3" style="text-align: justify;">
+                        <h5 class="mb-3">Donasi bencana di aceh</h5>
+                        <p> Kabar duka tersiar dari Aceh Timur yang diterjang banjir akibatnya 6.003 rumah warga yang berada
+                            di tujuh kecematan di Kabupaten Aceh Timur, Aceh harus terendam air. Sebanyak 2.751 warga juga
+                            harus tinggal sementara di pengungsian. <br>
+                            Serambi mekah Kembali berduka, hujan deras yang mengguyur aceh selama sepekan belakangan ini mengakibatkan
+                            air sungai meluap dan mengakibatkan banjir terjadi di Kawasan Aceh Utara dan juga Aceh Timur.
+                        </p>
+                        <a class="btn btn-primary py-2 px-3 me-3" data-bs-toggle="modal" data-bs-target="#modal3">
+                            Selengkapnya
+                            <div class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2">
+                                <i class="fa fa-arrow-right"></i>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Causes End -->
-    
+</div>
+<!-- Causes End -->
+
+<!-- Modal Start -->
+<div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Donasi Masyarakat NTB</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div id="carouselModal1" class="carousel slide">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="img/infodonasi1.png" class="d-block w-100" style="height: 15vw;">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/modal_donasi_NTB.jpg" class="d-block w-100" style="height: 15vw;">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselModal1" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselModal1" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <p style="text-align: justify;">Indonesia kembali berduka atas terjadinya bencana alam yang terjadi berbagai wilayah seperti di Nusa Tenggara Timur (NTT), Nusa Tenggara Barat (NTB) dan Malang. <br><br>
+                    BNPB pun mencatat total korban meninggal dunia berjumlah delapan orang dan 104 orang mengalami luka-luka di kejadian ini. Total kerusakan rumah sekitar 4.404 unit yang meliputi 29 kecamatan. Fasilitas umum yang terdampak sekitar 170 sekolah, 64 rumah ibadah, dan 12 faskes. <br><br>
+                    Terkait hal ini, dompet Amal TRANSMEDIA dengan CT ARSA Foundation sejak Rabu (14/4) telah mendistribusikan bantuan berupa kebutuhan dapur umum di Desa Jogo Mulyan Kecamatan Tirtoyudo sebanyak 500 packs, serta di Desa Pamotan Kecamatan Dampit sebanyak 200 packs. Tercatat lebih dari 1.700 jiwa yang terdampak gempa di wilayah tersebut. <br><br>
+                    Sementara itu, terdapat 177 korban jiwa dan 45 korban hilang pasca terjadinya banjir bandang yang melanda NTT dan NTB pada Minggu (11/4) malam. Lebih lanjut, masih ada beberapa wilayah NTT yang belum dapat dijangkau oleh tim evakuasi akibat sulitnya akses dan cuaca yang masih buruk.
+                </p>
+                <p style="text-align: justify;"> Hingga saat ini operasi pencarian korban hilang masih berlangsung dan diperpanjang hingga Jumat (16/4). Secara keseluruhan, lebih dari 1.500 jiwa yang terdampak bencana ini. <br><br>
+                    CT ARSA Foundation bersama Dompet Amal TRANSMEDIA telah memberikan donasi kepada masyarakat di wilayah NTT dalam kebutuhan dapur umum sejumlah 200 packs, kebutuhan bayi dengan jumlah total 280 packs yang terdiri dari susu, biskuit dan pampers, serta kebutuhan lain berupa pasta gigi, sikat gigi, sampo dan obat nyamuk sejumlah 100 kardus. <br>
+                    Sedangkan untuk masyarakat di wilayah NTB, bantuan sembako yang telah diberikan berupa beras, minyak goreng, sarden sebanyak 200 pack dan makanan instan sebanyak 1000 pcs kepada masyarakat di Bima, NTB. <br><br>
+                    Dompet Amal TRANSMEDIA mengajak kita semua untuk peduli dan membantu saudara-saudara di NTT, NTB dan Malang. Donasi dapat disalurkan ke rekening di bawah ini, donasi yang masuk akan disalurkan bekerjasama dengan CT ARSA Foundation. <br><br>
+                    Donasi dapat melalui tombol donasi di bawah ini.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <a href="donasi.html">
+                    <button type="button" class="btn btn-primary">Donasi</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Pembuatan Posko Kami Peduli di Kota Palu</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">   
+                <div id="carouselModal2" class="carousel slide">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="img/infodonasi2.png" class="d-block w-100" style="height: 15vw;">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/modal_posko.jpg" class="d-block w-100" style="height: 15vw;">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselModal2" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselModal2" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <p style="text-align: justify;"> Kami Peduli telah membuka posko untuk korban gempa dan tsunami di Balai Transmigrasi Kota Palu, Sulawesi Tengah. <br><br>
+                    Kami Peduli meyakini, posko yang didirikan itu dapat menampung hingga 2.000 pengungsi. “Lokasi posko tersebut dekat dengan Bandara.
+                    Dalam pembuatan posko Kami Peduli dibantu juga oleh beberapa perusahaan swasta dan BUMN (Badan Usaha Milik Negara),” terang Menteri Ekonomi. <br><br>
+                    Pendiri posko yang telah bertolak ke Palu mengatakan, beberapa perusahaan yang telah membantu di antaranya adalah BRI, Astra, Indofood, Sinarmas, CIMB Niaga dan Arta Graha. <br><br>
+                    "Terimakasih kepada semua relawan dan semua pihak yang telah berpartisipasi dan membantu posko Kami Peduli di Palu," ucapnya. <br><br>
+                    Menurut rencana dalam posko Kami Peduli tersebut, akan dibangun kembali sebanyak 12 tenda utama yang terletak di Halaman Balai Transmigrasi Kota Palu.
+                    Lebih lanjut, Pendiri posko mengatakan, posko pengungsi tersebut dikelola oleh puluhan Pegawai Negeri Sipil (PNS) di Palu, ratusan pendamping desa, pegawai perusahaan swasta dan tenaga medis. <br><br>
+                    Terkait pengoperasian posko, pendiri posko kemudian meminta kepada seluruh pendamping desa khususnya wilayah Sulawesi dan sekitarnya agar dapat membantu posko pengungsi di Palu.
+                    “Para pendamping desa di Gorontalo, Sulawesi Selatan, Sulawesi Barat, yang bisa membantu mohon membantu posko pendamping desa di sana (Palu), yang diprakasai oleh pendamping desa Sulawesi Tengah,” ungkapnya. <br><br>
+                    Untuk mempermudah koordinasi, lanjutnya, pendamping desa dapat segera menghubungi koordinator nasional pendamping desa, direktur Pemberdayaan Masyarakat Desa (PMD) atau Dirjen Pembangunan
+                    dan Pemberdayaan Masyarakat Desa (PPMD) agar dapat bergabung di grup Whatsapp bencana Palu. <br><br>
+                    Adapun untuk memenuhi kebutuhan korban bencana, sebelumnya, tim posko telah mengidentifikasi kebutuhan mereka. Bantuan pun akan didistribusikan langsung dari Kota Makassar.
+                    Terkait, pemenuhan kebutuhan dan distribusi logistik tersebut dikoordinir langsung oleh Dirjen Pengembangan Kawasan Transmigrasi, M Tedy. Seluruh bantuan logistik ini akan dipusatkan di Balai Transmigrasi Kota Palu. <br><br>
+                    Sementara itu, untuk pendistribusian terhadap masyarakat akan diatur oleh Kadis Transmigrasi Sulawesi Tengah dibantu para pendamping desa dengan berkoordinasi dengan Badan Pennggulangan Bencana Daerah (BPBD) setempat.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <a href="donasi.html">
+                    <button type="button" class="btn btn-primary">Donasi</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Donasi Bencana di Aceh</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div id="carouselModal3" class="carousel slide">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="img/infodonasi3.png" class="d-block w-100" style="height: 15vw;">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/modal_bencana_aceh.jpg" class="d-block w-100" style="height: 15svw;">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselModal3" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselModal3" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <p style="text-align: justify;"> Menurut Ashadi, ketinggian air di beberapa daerah terus meningkat berkisar  antara 30 sentimeter hingga 1,2 meter. <br><br>
+                    Sedangkan untuk Kawasan Aceh Utara  menurut data BPBD Aceh Utara, Banjir di akibatkan oleh jebolnya sungai Krueng Peutoe, Krueng Keureto dan Sungai Krueng Pirak. <br><br>
+                    Banjir yang disebabkan hujan lebat ini membuat para pengungsi sementara tinggal di rumah kerabat, madrasah atau sekolah dan tempat yang lebih tinggi. <br><br>
+                    Tak hanya merendam rumah warga, banjir juga membuat jalan lintas Medan-Banda Aceh menjadi terputus akibat air yang meluap terlalu tinggi dan membuat kendaraan kesulitan melewatinya. <br><br>
+                    Warga yang mengungsi saat ini masih belum bisa kembali kerumahnya masing masing, dikarena air masih memenuhi rumah. Mari bantu saudara kita yang ada di Aceh Utara dan Aceh Timur yang terdampak banjir. <br><br>
+                    Mari jadi bagian dari aksi peduli untuk membantu keluarga yang membutuhkan, sumbangankan donasi anda
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <a href="donasi.html">
+                    <button type="button" class="btn btn-primary">Donasi</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal End -->
     <!-- footer -->
     <div class="container-fluid bg-dark text-white-50 footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
